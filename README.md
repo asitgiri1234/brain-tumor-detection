@@ -1,86 +1,78 @@
-# brain-tumor-detection
-# 🧠 Brain Tumor Detection System
+Brain Tumor Detection
 
-An AI-powered full-stack web application that uses deep learning to classify brain MRI scans into four categories: Glioma, Meningioma, Pituitary Tumor, and No Tumor. Built with TensorFlow, FastAPI, and React.
+A deep learning–based system that classifies brain MRI images into four categories: Glioma, Meningioma, Pituitary Tumor, and No Tumor.
 
-![Project Banner](screenshots/banner.png)
+The project uses a convolutional neural network trained with transfer learning and provides predictions through a simple backend API with a lightweight frontend interface.
 
-## ⚠️ Important Disclaimer
+⚠️ Disclaimer: This project is for educational and research purposes only and must not be used for real-world medical diagnosis.
 
-**This project is for educational and research purposes only. It is NOT intended for clinical use and should not be used for actual medical diagnosis. Always consult qualified healthcare professionals for medical decisions.**
+🚀 Features
 
----
+Brain MRI image classification
 
-## 📋 Table of Contents
+Transfer learning–based CNN model
 
-- [Features](#features)
-- [Demo](#demo)
-- [Tech Stack](#tech-stack)
-- [Architecture](#architecture)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Model Performance](#model-performance)
-- [Project Structure](#project-structure)
-- [API Documentation](#api-documentation)
-- [Screenshots](#screenshots)
-- [Future Improvements](#future-improvements)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
+FastAPI backend for predictions
 
----
+Simple frontend for uploading MRI images
 
-## ✨ Features
+Confidence score for each prediction
 
-- **🎯 High Accuracy Classification**: 90%+ accuracy using EfficientNetB3 transfer learning
-- **⚡ Real-time Predictions**: < 2 second response time for MRI scan analysis
-- **🎨 Modern UI**: Responsive React interface with drag-and-drop file upload
-- **📊 Detailed Results**: Confidence scores and probability distribution for all classes
-- **🔒 Secure API**: FastAPI backend with input validation and error handling
-- **🐳 Docker Support**: Containerized deployment for easy setup
-- **📱 Responsive Design**: Works seamlessly on desktop and tablet devices
-- **🔍 Explainable AI**: Visual confidence indicators and probability charts
+🛠 Tech Stack
 
----
+Python
 
-## 🎬 Demo
+TensorFlow / Keras
 
-### Live Application
-- **Frontend**: http://localhost:3000
-- **Backend API**: http://localhost:8000
-- **API Docs**: http://localhost:8000/docs
+FastAPI
 
-### Video Demo
-[Link to demo video if available]
+React
 
----
+NumPy, OpenCV
 
-## 🛠️ Tech Stack
+📁 Project Structure
 
-### Machine Learning
-- **TensorFlow 2.20.0** - Deep learning framework
-- **Keras** - High-level neural networks API
-- **EfficientNetB3** - Pre-trained CNN architecture
-- **NumPy** - Numerical computing
-- **Pandas** - Data manipulation
-- **Scikit-learn** - Evaluation metrics
+brain-tumor-detection/
+├── backend/ – API and model logic
+├── frontend/ – React user interface
+├── models/ – Trained model files
+├── data/ – Dataset (not included)
+├── README.md
+└── .gitignore
 
-### Backend
-- **FastAPI** - Modern Python web framework
-- **Uvicorn** - ASGI server
-- **Python 3.9+** - Programming language
-- **Pillow** - Image processing
-- **OpenCV** - Computer vision operations
+▶️ How to Run
+Backend
 
-### Frontend
-- **React 18** - JavaScript UI library
-- **CSS3** - Styling
-- **HTML5** - Markup
+Navigate to the backend folder
 
-### DevOps
-- **Docker** - Containerization
-- **Docker Compose** - Multi-container orchestration
+Install dependencies from requirements.txt
 
----
+Start the FastAPI server
 
-## 🏗️ Architecture
+Frontend
+
+Navigate to the frontend folder
+
+Install dependencies using npm
+
+Start the React development server
+
+📊 Model Overview
+
+Architecture: EfficientNet (transfer learning)
+
+Input: Brain MRI images
+
+Output: Tumor class with confidence score
+
+Test accuracy: ~90%
+
+🔮 Future Improvements
+
+Grad-CAM visualization
+
+DICOM image support
+
+Model optimization
+
+Cloud deployment
